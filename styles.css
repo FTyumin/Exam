@@ -4,6 +4,14 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
 #main {
     text-align: center;
 }
@@ -72,3 +80,31 @@ body {
 .dropdown-menu a:hover {
     background-color: #f5f5f5;
 }
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+
+  .menu-item span {
+    font-weight: bold;
+  }
