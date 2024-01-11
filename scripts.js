@@ -48,5 +48,21 @@ function validateForm() {
   
     // If all validations pass, the form will be submitted
     return true;
-  }
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var learnMore = document.getElementById('learnMore');
+    var hiddenParagraph = document.getElementById('hiddenParagraph');
+
+    if (learnMore && hiddenParagraph) {
+        // Add a click event listener to the button
+        learnMore.addEventListener('click', function () {
+            // Toggle the visibility of the paragraph
+            hiddenParagraph.style.display = (hiddenParagraph.style.display === 'none' || hiddenParagraph.style.display === '') ? 'block' : 'none';
+        });
+    }
+});
+
+
   
