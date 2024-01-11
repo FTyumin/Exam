@@ -20,6 +20,10 @@ header {
     display: inline-block;
 }
 
+.navbar, .top, .menu, #reservation {
+    margin-bottom: 40px; 
+}
+
 .nav {
     list-style: none;
     padding: 0;
@@ -77,6 +81,14 @@ header {
     transition: background-color 0.3s ease-in-out;
 }
 
+.menu {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
 .menu-container {
     display: flex;
     justify-content: space-around;
@@ -90,30 +102,32 @@ header {
     background-color: #f5f5f5;
 }
 
-section {
-    max-width: 400px;
+.menu section {
+    /* max-width: 500px; */
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin: 20px;
-  }
+    width: 100%;
+    align-items: center;
+}
 
-  h2 {
+h2 {
     color: #333;
 }
 
-  .menu-item {
+.menu-item {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
 
-  .menu-item:last-child {
+.menu-item:last-child {
     border-bottom: none;
 }
 
-  .menu-item span {
+.menu-item span {
     font-weight: bold;
 }
