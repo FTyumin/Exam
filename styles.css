@@ -6,23 +6,28 @@ body {
 }
 
 header {
-    background-color: #355070;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 1rem;
 }
 
-.top {
-    background-color: #f8f8f8; /* Set a different background color */
+.restaurant-description {
+    max-width: 800px;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
-    margin-bottom: 20px; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
 }
+
   
 h2 {
     color: #333;
-    margin-bottom: 10px; /* Add space below the heading */
+    margin-bottom: 10px; 
 }
   
 button#learnMore {
@@ -162,6 +167,7 @@ h2 {
     margin: 20px;
     width: 100%;
     align-items: center;
+    background-color: #5B7553;
 }
 
 h2 {
@@ -173,6 +179,7 @@ h2 {
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    
 }
 
 .menu-item:last-child {

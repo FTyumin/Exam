@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
           }
       });
   }
+});
 
-  function validateForm() {
+function validateForm() {
       var name = document.getElementById("name").value;
       var phone = document.getElementById("phone").value;
       var date = document.getElementById("date").value;
@@ -43,10 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
       var selectedDate = new Date(date);
       var currentDate = new Date();
 
-      if (selectedDate < currentDate) {
-          console.log("before");
+      if (selectedDate <= currentDate) {
           document.getElementById("dateError").innerHTML = "Reservation date must be today or in the future.";
-          console.log("after");
           return false;
       }
 
@@ -58,8 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
       // If all validations pass, the form will be submitted
       return true;
   }
-});
-
 document.addEventListener('DOMContentLoaded', function () {
   var learnMore = document.getElementById('learnMore');
   var hiddenParagraph = document.getElementById('hiddenParagraph');
@@ -67,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (learnMore && hiddenParagraph) {
       // Add a click event listener to the button
       learnMore.addEventListener('click', function () {
-          // Toggle the visibility of the paragraph
+          // Change visibility of the paragraph
           hiddenParagraph.style.display = (hiddenParagraph.style.display === 'none' || hiddenParagraph.style.display === '') ? 'block' : 'none';
       });
   }
