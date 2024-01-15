@@ -227,4 +227,44 @@ button {
     cursor: pointer;
 }
 
+footer {
+    background-color: rgb(189, 209, 233);
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 100%; /* Set to your preferred max width, like 1200px or any other value */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.menu-bottom {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-bottom a {
+    text-decoration: none;
+    color: rgb(64, 64, 131);
+    text-transform: capitalize;
+}
+
+.menu-bottom a:hover {
+    color: rgb(130, 169, 228);
+}
+
+.menu-bottom li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#copyright {
+    font-size: 15px;
+    color: rgb(55, 55, 131);
+    background-color: rgb(189, 209, 233);
+    padding: 10px; 
+    text-align: center;
+}
+
+
 /* reservation.html */
