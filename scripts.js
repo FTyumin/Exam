@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
           if (validateForm()) {
               
               console.log('Form submitted successfully');
+              window.location.href = 'reservation.html'; // Change the URL as needed
           } else {
               console.log('Form validation failed');
           }
