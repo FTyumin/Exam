@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,26 +16,27 @@
         <nav class="navbar">
           <ul class="nav">
             <li><a href="#0">Home</a></li>
-            <li><a href="#0">About US</a></li>
+            <li><a href="#0">About </a></li>
             <li class="dropdown">
-              <a href="#0" class="dropdown-toggle" data-toggle="dropdown" data-target="dropdown" role="button">Clients<span class="caret"></span></a>
+              <a href="#0" class="dropdown-toggle" data-toggle="dropdown" data-target="dropdown" role="button">Locations<span class="caret"></span></a>
               <ul class="dropdown-menu" id="a-dropdown-menu">
-                <li><a href="#0">ABC</a></li>
-                <li><a href="#0">ABC</a></li>
-                <li><a href="#0">ABC</a></li>
+                <li><a href="#0">Riga</a></li>
+                <li><a href="#0">Rome</a></li>
+                <li><a href="#0">Naples</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#0" class="dropdown-toggle" data-toggle="dropdown" data-target="dropdown" role="button" >Menu<span class="caret"></span></a>
+              <a href="#menu" class="dropdown-toggle" data-toggle="dropdown" data-target="dropdown" role="button" >Menu<span class="caret"></span></a>
               <ul class="dropdown-menu" id="b-dropdown-menu">
-                <li><a href="#0">option1</a></li>
-                <li><a href="#0">option2</a></li>
-                <li><a href="#0">option3</a></li>
+                <li><a href="#menu">Appetizers</a></li>
+                <li><a href="#menu">Pizza</a></li>
+                <li><a href="#menu">Pasta</a></li>
+                <li><a href="#menu">Drinks</a></li>
               </ul>
             </li>
             <li><a href="#0">Gallery</a></li>
             <li><a href="#0">Contacts</a></li>
-            <li><a href="">Reservation</a></li>
+            <li><a href="#reservation">Reservation</a></li>
           </ul>
         </nav>
 
@@ -50,7 +51,7 @@
                 Indulge your senses in a culinary journey at our exquisite restaurant, where every dish tells a story of flavors and passion. Nestled in the heart of the city, our establishment is a haven for food enthusiasts seeking an unforgettable dining experience.
             </p>
             <p>
-                Our chefs meticulously craft each dish using only the finest and freshest ingredients, ensuring a symphony of tastes with every bite. Whether you're a connoisseur of classic favorites or eager to explore adventurous culinary creations, our menu offers a diverse selection to satisfy every palate.
+                <i>Our chefs meticulously craft each dish using only the finest and freshest ingredients,</i> ensuring a symphony of tastes with every bite. Whether you're a connoisseur of classic favorites or eager to explore adventurous culinary creations, our menu offers a diverse selection to satisfy every palate.
             </p>
             <p>
                 <b>Immerse yourself </b>in the inviting ambiance of our dining space, where modern elegance meets warm hospitality. The soothing decor and attentive staff create the perfect setting for intimate dinners, celebrations, or casual gatherings with friends and family.
@@ -61,7 +62,7 @@
         </div>
         </div>
       <h2>Menu</h2>
-        <div class="menu">
+        <div class="menu" id="menu">
           
           <section>
             <h2>Appetizers</h2>
@@ -126,7 +127,7 @@
         
             <div class="menu-item">
               <span>Lasagna</span>
-              <span>€15.99</span>
+              <span><s>€15.99</s> €11.99</span>
             </div>
         
             <div class="menu-item">
@@ -188,7 +189,7 @@
           </form>
 
         </div>
-        <!-- <footer>
+        <footer>
           <ul class="menu-bottom">
             <li><a href="#">Phone : 27 469 220</a></li>
             <li><a href="#">Email : @gmail.com</a></li>
@@ -197,7 +198,7 @@
               <li><a href="#">find a store</a></li>
           </ul>
       </footer>
-      <div id="copyright">FT 2024 - All rights reserved</div> -->
+      <div id="copyright">FT 2024 - All rights reserved</div>
     </div>
 
 

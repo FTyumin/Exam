@@ -18,6 +18,25 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    var data = {
+        elementType: 'p',
+        content: 'This is a new paragraph created from JSON.',
+        attributes: {
+            class: 'new-paragraph',
+            id: 'paragraphId'
+        }
+    };
+
+    var newElement = document.createElement(data.elementType);
+    newElement.textContent = data.content;
+
+    for (var key in data.attributes) {
+        newElement.setAttribute(key, data.attributes[key]);
+    }
+
+    // Appending new element to the body
+    document.body.appendChild(newElement);
 });
 
 var reservations = [];
@@ -49,6 +68,9 @@ function validateForm() {
         document.getElementById("dateError").innerHTML = "Please select a reservation date.";
         return false;
     }
+
+   
+    
 
     
 
