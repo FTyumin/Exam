@@ -52,11 +52,6 @@ function validateForm() {
 
     
 
-    
-   
-
-   
-
     // Check if the selected date is today or in the future
     var selectedDate = new Date(date);
     var currentDate = new Date();
