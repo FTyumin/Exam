@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (form) {
       form.addEventListener('submit', function (event) {
-          // Prevent the default form submission behavior
+          // Prevent the default refresh
           event.preventDefault();
 
           
@@ -70,3 +70,25 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   }
 });
+
+var reservations = [];
+
+function saveReservationData() {
+    var name = document.getElementById("name").value;
+    var date = document.getElementById("date").value;
+    var people = document.getElementById("people").value;
+
+    // Create an object with reservation data
+    var reservationData = {
+        name: name,
+        date: date,
+        people: people
+    };
+
+    // Add the reservation data to the array
+    reservations.push(reservationData);
+}
+
+document.getElementById("name").textContent += reservations.name;
+document.getElementById("date").textContent += reservations.date;
+document.getElementById("people").textContent += reservations.people;
