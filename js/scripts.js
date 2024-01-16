@@ -9,10 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (validateForm()) {
                 console.log('Form submitted successfully');
                 
-                // Store reservation data in localStorage
                 
                 // Redirect to the reservation.html page
-                // window.location.href = 'reservation.html'; // Change the URL as needed
             } else {
                 console.log('Form validation failed');
             }
@@ -38,7 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Appending new element to the body
     // document.body.appendChild(newElement);
 
-    
+
+    var submitButton = document.querySelector('[type="submit"]');
+    submitButton.addEventListener('click', function() {
+       // Change the location to reservation.html when the button is clicked
+       window.location.href = 'reservation.html';
+    });
+
 });
 
 
@@ -68,10 +72,6 @@ function validateForm() {
         return false;
     }
 
-
-
-
-
     // Check if the selected date is today or in the future
     var selectedDate = new Date(date);
     var currentDate = new Date();
@@ -81,7 +81,8 @@ function validateForm() {
         return false;
     }
 
-   
+    window.location.href = 'reservation.html'; 
+
 
     // If all validations pass, the form will be submitted
     return true;

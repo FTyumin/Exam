@@ -3,56 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/scripts.js"></script>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              var reservationDiv = document.getElementById('reservation-details');
+
+              var newParagraph = document.createElement('p');
+              newParagraph.textContent = 'This is a new paragraph created using DOM.';
+              reservationDiv.appendChild(newParagraph);
+            });
+    </script>
     <link rel="stylesheet" href="../css/reservation.css">
     <title>Reservation Details</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .reservation-details {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
-            margin: 0 auto; /* Added to center horizontally */
-        }
-
-        h1 {
-            color: #e44d26;
-        }
-
-        p {
-            margin: 10px 0;
-        }
-
-        .footer {
-            margin-top: 20px;
-            color: #555;
-        }
-    </style>
 </head>
 <body>
 
     <div class="reservation-details">
-        <h1>Thank you for your reservation</h1>
-        <div class="footer">
-        <p>&copy; 2024 FT All rights reserved.</p>
+        
     </div>
-    </div>
-
-    
-
 </body>
 </html>
