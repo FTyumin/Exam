@@ -9,7 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
             if (validateForm()) {
                 console.log('Form submitted successfully');
                 
-                
+               
+
+                // Optional: Clear the form fields after submission
+                form.reset();
                 // Redirect to the reservation.html page
             } else {
                 console.log('Form validation failed');
@@ -37,11 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // document.body.appendChild(newElement);
 
 
-    var submitButton = document.querySelector('[type="submit"]');
-    submitButton.addEventListener('click', function() {
-       // Change the location to reservation.html when the button is clicked
-       window.location.href = 'reservation.html';
-    });
+   
 
 });
 
@@ -49,7 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 var reservations = [];
 
-function validateForm() {
+function validateForm(event) {
+    event.preventDefault();
     var name = document.getElementById("name").value;
     var phone = document.getElementById("phone").value;
     var date = document.getElementById("date").value;
