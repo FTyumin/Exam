@@ -36,8 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Appending new element to the body
-    document.body.appendChild(newElement);
+    // document.body.appendChild(newElement);
+
+    
 });
+
+
 
 var reservations = [];
 
@@ -69,10 +73,7 @@ function validateForm() {
         return false;
     }
 
-   
-    
 
-    
 
     // Check if the selected date is today or in the future
     var selectedDate = new Date(date);
