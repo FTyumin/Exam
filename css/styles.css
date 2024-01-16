@@ -271,5 +271,7 @@ footer {
 }
 
 #nameError, #phoneError, #dateError, #timeError {
-    
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

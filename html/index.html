@@ -164,17 +164,17 @@
 
         <div id="reservation">
           <h2>Reservation</h2>
-          <form action="https://www.w3schools.com/action_page.php"method="post" onsubmit="validateForm()" id="reservationForm">
+          <!-- <form action="https://www.w3schools.com/action_page.php">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" value="John" required>
             <div id="nameError" class="error-message"></div>
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" value="123" required>
             <div id="phoneError" class="error-message"></div>
         
             <label for="date">Reservation Date:</label>
-            <input type="date" id="date" name="date" required>
+            <input type="date" id="date" name="date"  required>
             <div id="dateError" class="error-message"></div>
         
             <label for="time">Reservation Time:</label>
@@ -185,8 +185,32 @@
             <input type="number" id="people" name="people" min=1 required>
             
         
-            <button type="submit">Submit Reservation</button>
-          </form>
+            <input type="submit" value="submit"></input>
+          </form> -->
+
+          <form action="https://www.w3schools.com/action_page.php" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="John" required>
+            <div id="nameError" class="error-message"></div>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" value="123" required>
+            <div id="phoneError" class="error-message"></div>
+        
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date"  required>
+            <div id="dateError" class="error-message"></div>
+        
+            <label for="time">Reservation Time:</label>
+            <input type="time" id="time" name="time"  required>
+            <div id="timeError" class="error-message"></div>
+        
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min=1 required>
+            
+        
+            <input type="submit" value="submit"></input>
+          </form> 
 
         </div>
         <footer>

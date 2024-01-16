@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Store reservation data in localStorage
                 
                 // Redirect to the reservation.html page
-                window.location.href = 'reservation.html'; // Change the URL as needed
+                // window.location.href = 'reservation.html'; // Change the URL as needed
             } else {
                 console.log('Form validation failed');
             }
@@ -68,10 +68,7 @@ function validateForm() {
         return false;
     }
 
-    if (date === "") {
-        document.getElementById("dateError").innerHTML = "Please select a reservation date.";
-        return false;
-    }
+
 
 
 
@@ -84,14 +81,10 @@ function validateForm() {
         return false;
     }
 
-    if (time === "") {
-        document.getElementById("timeError").innerHTML = "Please select a reservation time.";
-        return false;
-    }
+   
 
     // If all validations pass, the form will be submitted
     return true;
 }
-
 
 
