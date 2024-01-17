@@ -52,8 +52,8 @@ function validateForm(event) {
         return false;
     }
 
-    if (phone === "") {
-        document.getElementById("phoneError").innerHTML = "Please enter your phone number.";
+    if (phone === "" || phone.length!=8) {
+        document.getElementById("phoneError").innerHTML = "Please enter a valid number.";
         return false;
     }
 
