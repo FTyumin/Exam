@@ -44,7 +44,7 @@ button#learnMore {
 }
   
 p#hiddenParagraph {
-    display: none; /* Hide the paragraph initially */
+    display: none; /* Hide the paragraph */
     color: #555;
     margin-top: 10px;
 }

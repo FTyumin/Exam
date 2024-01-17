@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Restaurant Gallery</title>
 </head>
 <body>
@@ -13,22 +15,58 @@
     </header>
 
     <main>
+        <nav class="navbar">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#0">About </a></li>
+              <li class="dropdown">
+                <a href="#0" class="dropdown-toggle" data-toggle="dropdown" data-target="dropdown" role="button">Locations<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="a-dropdown-menu">
+                  <li><a href="#0">Riga</a></li>
+                  <li><a href="#0">Rome</a></li>
+                  <li><a href="#0">Naples</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#menu" class="dropdown-toggle" data-toggle="dropdown" data-target="dropdown" role="button" >Menu<span class="caret"></span></a>
+                <ul class="dropdown-menu" id="b-dropdown-menu">
+                  <li><a href="#menu">Appetizers</a></li>
+                  <li><a href="#menu">Pizza</a></li>
+                  <li><a href="#menu">Pasta</a></li>
+                  <li><a href="#menu">Drinks</a></li>
+                </ul>
+              </li>
+              <li><a href="gallery.html" id="gallery">Gallery</a></li>
+              <li><a href="#0">Contacts</a></li>
+              <li><a href="index.html#reservation">Reservation</a></li>
+            </ul>
+          </nav>
         <div class="gallery">
-            <div class="gallery-item">
-                <img src="https://www.lupa.co.za/wp-content/uploads/2020/12/unsplash1.jpg" alt="Dish 1">
-            </div>
-            <div class="gallery-item">
-                <img src="https://cdn-web.greenlinetours.com/uploads/2022/12/21/thumb/s_en_w360_h250/best-pizza-rome-525.jpg" alt="Dish 2">
-            </div>
-            <div class="gallery-item">
-                <img src="https://img.freepik.com/premium-photo/detail-delicious-pizza-stuffed-with-lots-cheese-providing-explosion-flavors-impossible-resist-generated-by-ai_695181-3791.jpg?w=360" alt="Dish 3">
-            </div>
+            
         </div>
     </main>
 
     <footer>
         <p>&copy; 2024 FT. All rights reserved.</p>
     </footer>
+
+    <script>
+        $(document).ready(function () {
+            // Array of JSON objects representing new gallery items
+            var newItems = [
+                { imageUrl: "https://withlocals-com-res.cloudinary.com/image/upload/w_360,h_200,c_fill,g_auto,q_auto,dpr_1.0,f_auto/5491231834377871139ddf2916f826b4", altText: "Dish 1" },
+                { imageUrl: "https://lirp.cdn-website.com/8bfaed2d26b541a4a70256a53a78d6c5/dms3rep/multi/opt/576a388new-360w.jpg", altText: "Dish 2" },
+                { imageUrl: "https://img.freepik.com/premium-photo/detail-delicious-pizza-stuffed-with-lots-cheese-providing-explosion-flavors-impossible-resist-generated-by-ai_695181-3791.jpg?w=360", altText: "Dish 3" },
+            
+            ];
+            // Loop through the array and create a new gallery item for each object
+            $.each(newItems, function (index, item) {
+                var newGalleryItem = $('<div class="gallery-item"><img src="" alt=""></div>');
+                newGalleryItem.find('img').attr('src', item.imageUrl).attr('alt', item.altText);
+                $('.gallery').append(newGalleryItem);
+            });
+        });
+    </script>
 
 </body>
 </html>
