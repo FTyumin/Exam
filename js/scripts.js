@@ -8,12 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (validateForm()) {
                 console.log('Form submitted successfully');
-                
-               
-
-                // Optional: Clear the form fields after submission
-                form.reset();
-                // Redirect to the reservation.html page
             } else {
                 console.log('Form validation failed');
             }
@@ -36,17 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
         newElement.setAttribute(key, data.attributes[key]);
     }
 
-    // Appending new element to the body
-    // document.body.appendChild(newElement);
-
-
-   
 
 });
-
-
-
-var reservations = [];
 
 function validateForm(event) {
     event.preventDefault();
@@ -76,8 +61,15 @@ function validateForm(event) {
     var selectedDate = new Date(date);
     var currentDate = new Date();
 
+    var selectedHour = parseInt(time.split(":")[0]);
+
     if (selectedDate <= currentDate) {
-        document.getElementById("dateError").innerHTML = "Reservation date must be today or in the future.";
+        document.getElementById("dateError").innerHTML = "Reservation date must be tomorrow or further.";
+        return false;
+    }
+
+    if (selectedHour < 13 || selectedHour > 22) {
+        document.getElementById("timeError").innerHTML = "Working hours are from 13-22";
         return false;
     }
 
