@@ -49,3 +49,32 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/*Media queries*/
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 150px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        max-width: 800px;
+    }
+}
